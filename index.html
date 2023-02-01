@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="img/icono.png" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="//unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        
+		 <p>Encriptador de Texto</p> 
+	</header>
+    <main class="contenedor">
+        <img class="logo" src="img/Logo.png" alt="Logo Alura">
+        <div class="grilla">    
+            <section class="encriptador">
+                
+                <textarea class="msg" cols="30" rows="10" placeholder = "Ingrese el texto aquí"></textarea> 
+                   
+                <p class="advertencia">⚠ Solo letras minúsculas y sin acentos </p>        
+                <div class="botones">
+                    <button class="btn-encriptar" type="button"  onclick="btnEncriptar()"> 
+                        Encriptar 
+                    </button> 
+                    <button class="btn-desencriptar" type="button"  onclick="btnDesencriptar()"> 
+                        Desencriptar 
+                    </button>
+                </div>
+
+            </section>
+            <section class="msj-final">
+                
+                <textarea class="imprimir" readonly="readonly"></textarea>
+                <!--Contenedor visible solo cundo no hay texto encriptado-->
+                <div class="msjAdvertencia">
+                    <h6 class = "msjNoEncontrado"><span>Ningún mensaje fue encontrado</span></h6>
+                    <h6 class = "msjNoEncontrado">Ingresa el texto que desees encriptar o desencriptar.</h6>
+                </div>
+                
+                <div class="botones">
+                    <button class="btn-copiar" type="button"  onclick="copiarTexto()">
+                        Copiar
+                    </button>
+                </div>
+                
+                               
+            </section>
+        </div>
+                
+        
+    </main>
+    <footer class="footer">
+        <p>Diseñado por <span class="creador">Jesús Medina</span> </p>
+        <a><img class="enlaces" src="img/linkedin.png" alt="linkedin"></a>
+        <a><img class="enlaces" src="img/github.png" alt=""></a>
+        
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
