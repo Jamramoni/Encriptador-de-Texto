@@ -6,7 +6,7 @@
         getFocus();//lo llamo aqui para que inicie con el focus al cargar
 
         btnCopiar.style.display = "none";
-        //msjsNoEncontrado.style.display = "none";
+        
         //Funcion encargada a encriptar el mensaje (msj) que recibe
         //Metodo .includes() determina si una matriz incluye un determinado elemento, devuelve truo ó false
 
